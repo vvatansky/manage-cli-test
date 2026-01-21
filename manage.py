@@ -3,12 +3,12 @@ from sys import argv
 
 class Help:
     def run(self, args):
-        print(f'-- Run task <help> with arguments: {args}')
+        print(f'-- Run task [help] with arguments: {args}')
 
 
 class Plus:
     def run(self, args):
-        print(f'-- Run task <plus> with arguments: {args}')
+        print(f'-- Run task [plus] with arguments: {args}')
 
 
 class Manager:
