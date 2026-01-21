@@ -6,10 +6,16 @@ class Help:
         print(f'-- Run task <help> with arguments: {args}')
 
 
+class Plus:
+    def run(self, args):
+        print(f'-- Run task <plus> with arguments: {args}')
+
+
 class Manager:
     def __init__(self):
         self.tasks = {
-            'help': Help()
+            'help': Help(),
+            'plus': Plus()
         }
 
     def parse_args(self, *args):
