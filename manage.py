@@ -1,6 +1,11 @@
 from sys import argv
 
 
+class Test:
+    def run(self, args):
+        print(f'This is a test task with args: {args}')
+
+
 class Help:
     def run(self, args):
         print(f'-- Run task [help] with arguments: {args}')
@@ -15,7 +20,8 @@ class Manager:
     def __init__(self):
         self.tasks = {
             'help': Help(),
-            'plus': Plus()
+            'plus': Plus(),
+            'test': Test()
         }
 
     def parse_args(self, *args):

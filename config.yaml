@@ -1,2 +1,3 @@
 pattern: SOME_STRING
 secret_key: no_say_to_anybody!
+max_count_list: -1
